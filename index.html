@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
     <main>
-    <form id="formu" action="">
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-warp">
 
-    </form>
+                    <form action="index.html" autocomplete="off" class="sifn-in-form">
+
+                        <div class="logo">
+                            <img src="./imgs/logo.png" alt="logo">
+                            <h4>Eclipse</h4>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Bem vindos</h2>
+                            <h6>Ainda Não se inscreveu?</h6>
+                            <a href="#" class="toggle">Inscreva-se</a>
+                        </div>
+
+                        <div class="actual-form">
+
+                            <div class="input-warp">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-warp">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                                <label>Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign In" class="sign-btn">
+
+                            <p class="text">
+                                Esqueceu a senha ou seus dados de login?
+                                <a href="#">Obter ajuda para fazer</a> login
+                            </p>
+                            
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
