@@ -3,5 +3,6 @@
         "Formulario",
         "imgs",
         "logar"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
