@@ -30,7 +30,7 @@ header {
 .navigation a {
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -107,10 +107,11 @@ header {
     font-size: 1em;
     color: #162938;
     font-weight: 500;
-    pointer-events: none;   
+    pointer-events: none; 
+    transition: .5s;  
 }
 .input-box input:focus~label,
-].input-box input:valid~label {
+.input-box input:valid~label {
     top: -5px;
 }
 .input-box input {
@@ -119,6 +120,10 @@ header {
     background: transparent;
     border: none;
     outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
 }
 .input-box .icon {
     position: absolute;
@@ -126,4 +131,49 @@ header {
     font-size: 1.2em;
     color: #162938;
     line-height: 57px;
+}
+.remember-forgot {
+    font-size: .9em;
+    color: #162938;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input {
+    accent-color: #161616;
+    margin-right: 3px;
+}
+.remember-forgot a {
+    color: #162938;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.login-register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover {
+    text-decoration: underline;
 }

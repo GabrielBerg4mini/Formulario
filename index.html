@@ -7,54 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <div class="box">
-            <div class="inner-box">
-                <div class="forms-warp">
 
-                    <form action="index.html" autocomplete="off" class="sifn-in-form">
+    <header>
+        <h2 class="logo"><img src="./imgs/logo.png" alt="logo"></h2>
+        <nav class="navigation">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
 
-                        <div class="logo">
-                            <img src="./imgs/logo.png" alt="logo">
-                            <h4>Eclipse</h4>
-                        </div>
+    </header>
 
-                        <div class="heading">
-                            <h2>Bem vindos</h2>
-                            <h6>Ainda Não se inscreveu?</h6>
-                            <a href="#" class="toggle">Inscreva-se</a>
-                        </div>
-
-                        <div class="actual-form">
-
-                            <div class="input-warp">
-                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
-                                <label>Name</label>
-                            </div>
-
-                            <div class="input-warp">
-                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
-                                <label>Password</label>
-                            </div>
-
-                            <input type="submit" value="Sign In" class="sign-btn">
-
-                            <p class="text">
-                                Esqueceu a senha ou seus dados de login?
-                                <a href="#">Obter ajuda para fazer</a> login
-                            </p>
-                            
-                        </div>
-
-                    </form>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
                 </div>
-            </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lembrar-me</label>
+                    <a href="#">Esqueceu a Senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Não tem conta ainda?<a href="#" class="register-link">Registrar-se</a></p>
+                </div>
+            </form>
         </div>
-    </main>
+    </div>
+
+
     <script src="./script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
